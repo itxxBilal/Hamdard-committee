@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Dashboard</h1>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Father Name</th>
+            <th>CNIC</th>
+            <th>Phone</th>
+            <th>CNIC Picture</th>
+            <th>Profile Picture</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for member in members %}
+        <tr>
+            <td>{{ member.id }}</td>
+            <td>{{ member.name }}</td>
+            <td>{{ member.father_name }}</td>
+            <td>{{ member.cnic }}</td>
+            <td>{{ member.phone }}</td>
+            <td><img src="{{ url_for('static', filename='images/uploads/' + member.cnic_pic) }}" alt="CNIC" width="100"></td>
+            <td><img src="{{ url_for('static', filename='images/uploads/' + member.profile_pic) }}" alt="Profile" width="100"></td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

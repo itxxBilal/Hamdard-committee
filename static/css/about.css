@@ -1,0 +1,14 @@
+/* Custom styles for the about page */
+h1 {
+    color: #2980b9;
+    text-align: center;
+    margin-top: 20px;
+}
+
+p {
+    font-size: 1.1em;
+    margin: 20px auto;
+    max-width: 800px;
+    line-height: 1.6;
+    text-align: justify;
+}

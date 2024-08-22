@@ -1,0 +1,13 @@
+/* Base styles applied across all pages */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+}
+
+.navbar {
+    margin-bottom: 20px;
+}
+
+.container {
+    padding: 20px;
+}
